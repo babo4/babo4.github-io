@@ -1,0 +1,143 @@
+#maersk_table{
+    font-family: arial, sans-serif; border-collapse: collapse; width: 100%; font-size: small;
+}
+
+#maersk_table h1{
+    background: linear-gradient(180deg,#095779, rgba(9, 87, 121, 0.4)); color: beige; text-align: center; padding: 0.5rem 0.1rem; font-size: 2rem; text-transform: uppercase;
+}
+
+#intro_maersk{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+#intro_maersk li{
+    width: 60%;
+}
+
+#intro_maersk li:last-child, #intro_maersk li:first-child{
+    width: 20%;
+}
+
+#logo_img{
+    width: 100px;
+    object-fit: contain;
+}
+
+#hauling_img{
+    display: flex; margin: 0 auto; object-fit: contain; width: 70%; border-radius: 5px; box-shadow: 0px 0px 3px black; padding: 1px;
+}
+
+#intro_maersk li p{
+    display: flex;
+    gap: 0.5rem;
+}
+
+#intro_maersk li p b{
+    width: 50%;
+}
+
+#track_btn{
+    display: flex;
+    justify-content: center;
+    margin: 2rem auto;
+}
+
+#track_btn span{
+    text-decoration: none; border: 1px solid grey; border-radius: 4px; background: #095779; color: white; padding: 0.5rem 1rem; font-size: large; font-weight: 500; cursor: pointer;
+}
+
+#track_maersk{
+    width: 60%;
+    display: flex;
+    list-style: none;
+    margin: 1rem auto;
+    text-align: justify;
+    word-wrap: break-word;
+}
+
+#track_maersk li p{
+    display: flex;
+    gap: 0.5rem;
+}
+
+#track_maersk li p b{
+    width: 20%;
+}
+
+#maersk_footer{
+    text-align: center;
+    font-size: smaller;
+    color: gray;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 2rem;
+}
+
+/* laoding phase */
+#laod_content{
+    display: none; justify-content: center; align-items: center; width: 100%; height: 100vh; font-family: Arial, Helvetica, sans-serif; background-color: white; transition: 0.5s ease-in-out;
+}
+
+#img_laoder{
+    object-fit: contain;
+}
+
+#plz_wait{
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    display: flex;
+    margin: 1rem auto;
+}
+
+#service_laoding{
+    font-style: italic; color: gray; font-weight: 500;
+}
+
+/*  */
+
+@media (max-width: 1030px) {
+    #intro_maersk{
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+    
+    #intro_maersk li, #intro_maersk li:last-child, #intro_maersk li:first-child{
+        width: 100%;
+    }
+
+    #logo_img{
+        width: 150px;
+    }
+
+    #hauling_img{
+       width: 80%;
+    }
+    
+    #intro_maersk li p b{
+        width: auto;
+    }
+
+    #track_maersk{
+        width: 100%;
+        font-size: larger;
+    }
+    
+    #track_maersk li p{
+        gap: 1.5rem;
+    }
+    
+    #track_maersk li p b{
+        width: auto;
+    }
+
+    /* loading phase */
+
+    #laod_content{
+        /* align-items: flex-start; */
+        /* margin: 3rem auto; */
+        height: 50vh;
+    }
+}
