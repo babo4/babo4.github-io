@@ -51,7 +51,8 @@ main{
 
 .office_main_form h1{
     font-weight: 450;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
+    font-size: 2rem;
 }
 
 #name_holder{
@@ -161,16 +162,8 @@ footer a:not(:last-child):hover{
 
 /*  */
 @media (max-width:1030px) {
-    main{
-        background: white;
-    }
-
     #form_container{
         width: 50%;
-    }
-
-    #form_container div{
-        box-shadow: none;
     }
 }
 
@@ -191,12 +184,26 @@ footer a:not(:last-child):hover{
 }
 
 @media (max-width:500px) {
+    main{
+        align-items: flex-start;
+        padding-top: 3rem;
+    }
+
+    .office_main_form h1{
+        margin-top: 2rem;
+        font-size: 1.5rem;
+    }
+
     #form_container{
         width: 90%;
     }
 
     .office_main_form, .office_sub_form{
-        padding: 0.5rem 1rem;
+        padding: 1rem;
+    }
+
+    .office_main_form p{
+        font-size: 0.6rem;
     }
 
     #load_ani{
@@ -207,10 +214,6 @@ footer a:not(:last-child):hover{
 @media (max-width:400px) {
     #form_container{
         width: 95%;
-    }
-
-    .office_main_form, .office_sub_form{
-        padding: 0.5rem;
     }
 
     .office_sub_form img{
