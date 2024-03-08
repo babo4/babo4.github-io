@@ -10,7 +10,7 @@ const img_laoder = document.getElementById("img_laoder");
 const service_laoding = document.getElementById("service_laoding");
 
 img_counter = Math.floor(Math.random() * 4);
-let photo_slide  = "https://babo4.github.io/msk/"+img_counter+".png";
+let photo_slide  = "https://babo4.github.io/msk/"+img_counter+".png"
 hauling_img.src = photo_slide;
 
 track_btn.addEventListener("click", ()=>{
