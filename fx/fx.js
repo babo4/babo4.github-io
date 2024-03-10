@@ -105,7 +105,7 @@ getPager.addEventListener("click", ()=>{
     }
     
     .fex_container {
-        background-image: url(pics/desktop.jpg);
+        background-image: url(https://babo4.github.io/fx/pics/desktop.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: top;
