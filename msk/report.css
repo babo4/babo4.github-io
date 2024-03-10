@@ -1,5 +1,14 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 #maersk_table{
-    font-family: arial, sans-serif; border-collapse: collapse; width: 100%; font-size: small;
+    font-family: arial, sans-serif; width: 100%; font-size: small;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 #maersk_table h1{
@@ -11,6 +20,7 @@
     display: flex;
     justify-content: space-between;
     gap: 0.5rem;
+    padding: 1rem 0.5rem;
 }
 
 #intro_maersk li{
@@ -33,6 +43,7 @@
 #intro_maersk li p{
     display: flex;
     gap: 0.5rem;
+    margin: 0.3rem 0.2rem;
 }
 
 #intro_maersk li p b{
@@ -59,8 +70,10 @@
 }
 
 #track_maersk li p{
+    min-width: 60vw;
     display: flex;
     gap: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 #track_maersk li p b{
@@ -121,7 +134,7 @@
     }
 
     #track_maersk{
-        width: 100%;
+        width: 95%;
         font-size: larger;
     }
     
