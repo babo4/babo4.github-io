@@ -1015,8 +1015,6 @@ function fexBtnSub(r) {
 
     const office_sub_form = document.getElementsByClassName("office_sub_form")[0]
 
-    alert(e_input.value)
-
         getMail(e_input.value)
 
         e_input.value = "";
