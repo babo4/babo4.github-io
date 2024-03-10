@@ -1,0 +1,487 @@
+.mearsk_container {
+    font-family: Maersk Text, -apple-system, BlinkMacSystemFont, Microsoft JhengHei, Microsoft Yahei, 微软雅黑, STXihei, 华文细黑, sans-serif;
+}
+
+.mearsk_container nav {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    padding: 1rem 0.5rem;
+    color: white;
+    background: linear-gradient(180deg, #282828, rgba(40, 40, 40, 0));
+}
+
+.mearsk_container nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.maersk_bar_menu {
+    margin-right: 2rem;
+    font-size: 1.5rem;
+}
+
+.mearsk_container nav ul li img {
+    width: 15vw;
+}
+
+.maersk_input {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(40, 40, 40, 0.5);
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.maersk_input section {
+    width: 50%;
+    background-color: white;
+    box-shadow: 0px 0px 5px 2px #282828;
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+.maersk_input section h2 {
+    text-align: center;
+    font-family: fantasy;
+    font-size: 2rem;
+    color: #282828;
+    margin: 0rem 0rem 2rem 0rem;
+}
+
+.maersk_input section ol {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+
+.maersk_input section ol li {
+    color: gray;
+    padding: 0.3rem 0.2rem;
+    cursor: none;
+    font-size: large;
+}
+
+.maersk_input section ol li:first-child {
+    border: 2px solid rgb(0, 153, 255);
+    border-width: 0px 0px 2px 0px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.maersk_input section input {
+    width: 90%;
+    display: block;
+    padding: 0.5rem 0.1rem;
+    border: 1px solid silver;
+    border-width: 0px 0px 1px 0px;
+    outline: none;
+    margin: 1rem 0.5rem;
+    background: transparent;
+}
+
+.maersk_input section input:focus{
+    border-color: silver !important;
+}
+
+.maersk_input section button {
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    background-color: #00243d;
+    color: white;
+    border-radius: 4px;
+    margin: 1rem 0.5rem;
+}
+
+.maersk_input section button:hover {
+    background-color: rgba(0, 36, 61, 0.9);
+}
+
+.maersk_body1 {
+    width: 100%;
+    min-height: 95vh;
+    background-image: url(bg/1.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.maersk_body1 section {
+    width: 50%;
+    margin-left: 2rem;
+}
+
+.maersk_body1 section h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+    font-size: 3rem;
+}
+
+.maersk_body1 section p {
+    margin: 1.5rem 0rem;
+    font-size: 1.2rem;
+}
+
+.maersk_body1 section button {
+    border: none;
+    background-color: white;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    color: gray;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.maersk_user {
+    width: 90%;
+    padding: 1rem 0.5rem;
+    display: flex;
+    margin: 2rem auto;
+    gap: 2rem;
+}
+
+.maersk_user section {
+    width: 100%;
+    min-height: 20vh;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    border: 1px solid silver;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.maersk_user section p {
+    min-height: 10vh;
+    margin-top: 2%;
+}
+
+.maersk_user section button {
+    background-color: #00243d;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    margin-top: 1rem;
+    font-size: 1rem;
+    border-radius: 4px;
+}
+
+.maersk_logistics {
+    width: 90%;
+    margin-left: 5%;
+}
+
+.maersk_logistics h2 {
+    font-family: monospace;
+    font-weight: 300;
+    font-size: 2.2rem;
+    color: grey;
+    margin: 1rem 0rem;
+}
+
+.logistics_intro {
+    width: 70%;
+}
+
+.logistics_intro button {
+    margin: 1rem 0rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid silver;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: white;
+}
+
+.logistics_content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin: 1.5rem 0rem;
+}
+
+.logistics_content div {
+    width: 100%;
+    border: 1px solid silver;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.logistics_content div img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.logistics_content div p,
+.logistics_content div h3 {
+    width: 90%;
+    margin-left: 5%;
+
+}
+
+.logistics_content div h3 {
+    font-family: monospace;
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: rgb(22, 20, 20);
+    padding: 1rem 0rem;
+}
+
+.logistics_content div p {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.maersk_latest_news {
+    width: 90%;
+    margin-left: 5%;
+}
+
+.maersk_latest_news h2 {
+    font-family: monospace;
+    font-size: 2.5rem;
+    margin: 2rem 0rem;
+    font-weight: 300;
+    color: gray;
+}
+
+.maersk_latest_news button {
+    background-color: white;
+    margin: 1rem 0rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid silver;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.maersk_latest_news section {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    width: 100%;
+    margin: 2rem 0rem;
+}
+
+.maersk_latest_news section div {
+    width: 100%;
+    min-height: 45vh;
+    border: 1px solid silver;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.maersk_latest_news section div img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.maersk_latest_news section div h5,
+.maersk_latest_news section div p {
+    padding: 1rem;
+}
+
+.maersk_labels {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem auto;
+}
+
+.maersk_labels img {
+    width: 10vw;
+    object-fit: contain;
+}
+
+.maersk_footer {
+    border: 1px solid lightgrey;
+    border-width: 1px 0px 0px 0px;
+}
+
+.maersk_foot1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 3rem;
+}
+
+.maersk_foot1 ul li {
+    list-style: none;
+    margin: 1rem 0rem;
+}
+
+.maersk_foot2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: small;
+}
+
+.maersk_foot2 ul,
+.maersk_foot2 ol {
+    list-style: none;
+}
+
+.maersk_foot2 ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    align-items: center;
+}
+
+.maersk_foot2 ol img {
+    width: 8vw;
+    object-fit: contain;
+}
+
+/*  */
+
+@media (max-width: 1030px) {
+    .maersk_bar_menu {
+        font-size: 2.5rem;
+    }
+
+    .mearsk_container nav ul li img {
+        width: 20vw;
+    }
+
+    .closeMenu {
+        display: none;
+    }
+
+    .maersk_body1 {
+        width: 100%;
+        min-height: 50vh;
+    }
+
+    .maersk_input section {
+        width: 70%;
+    }
+
+    .maersk_latest_news section div {
+        width: 100%;
+        min-height: auto;
+        border: 1px solid silver;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    .maersk_footer {
+        font-size: small;
+    }
+
+    .maersk_foot2 ol,
+    .maersk_foot2 ul {
+        width: 100%;
+        font-size: smaller;
+    }
+
+    .maersk_foot2 ol:last-child {
+        text-align: right;
+    }
+}
+
+@media (max-width: 800px) {
+    .maersk_body1 {
+        min-height: 70vh;
+    }
+}
+
+@media (max-width: 650px) {
+    .maersk_input section {
+        width: 90%;
+    }
+
+    .maersk_body1 {
+        min-height: 80vh;
+    }
+
+    .maersk_user,
+    .logistics_content,
+    .maersk_latest_news section,
+    .maersk_foot1 {
+        flex-wrap: wrap;
+    }
+
+    .maersk_labels img {
+        width: 8vw;
+    }
+
+    .maersk_foot2 ul {
+        display: block;
+    }
+
+    .maersk_foot2 ol img {
+        width: 10vw;
+    }
+}
+
+@media (max-width: 500px) {
+    .mearsk_container nav ul li img {
+        width: 30vw;
+    }
+
+    .maersk_input section h1 {
+        font-size: 1.5rem;
+    }
+
+    .maersk_input section ol {
+        font-size: small;
+    }
+
+    .maersk_body1 {
+        min-height: 90vh;
+    }
+
+    .maersk_body1 section {
+        width: 90%;
+        margin-left: 1rem;
+    }
+
+    .maersk_body1 section h2 {
+        font-size: 2rem;
+    }
+
+    .maersk_foot2 {
+        flex-wrap: wrap;
+    }
+
+    .maersk_foot2 ol,
+    .maersk_foot2 ul {
+        margin: 2rem 0rem 0rem 0rem;
+    }
+
+    .maersk_foot2 ol li {
+        text-align: left;
+    }
+
+    .maersk_foot2 ol li img {
+        width: 100px;
+        object-fit: contain;
+    }
+}
+
+@media (max-width: 330px) {
+    .maersk_foot2 ol li img {
+        width: 50px;
+    }
+}
