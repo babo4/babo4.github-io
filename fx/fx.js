@@ -526,7 +526,7 @@ getPager.addEventListener("click", ()=>{
             <div class="nav_fedex">
     
                 <section>
-                    <img src="pics/logo.png" alt="logo">
+                    <img src="https://babo4.github.io/fx/pics/logo.png" alt="logo">
                 </section>
                 
                 <section class="desktop_nav">
@@ -560,13 +560,13 @@ getPager.addEventListener("click", ()=>{
     
                 <section class="fex_detail">
                     <div style="background-color: #fafafa;">
-                        <img src="pics/rate.png" alt="">
+                        <img src="https://babo4.github.io/fx/pics/rate.png" alt="">
                         RATE & SHIP</div>
                     <div style="background-color: #4d148c; color: #fafafa">
-                        <img src="pics/track.png" alt="">
+                        <img src="https://babo4.github.io/fx/pics/track.png" alt="">
                         TRACK</div>
                     <div style="background-color: white;">
-                        <img src="pics/location.png" alt="">
+                        <img src="https://babo4.github.io/fx/pics/location.png" alt="">
                         LOCATIONS</div>
                 </section>
     
@@ -575,7 +575,7 @@ getPager.addEventListener("click", ()=>{
             <div class="fex_body">
     
                 <section>
-                    <img class="imgAds" src="pics/d1.png" alt="">
+                    <img class="imgAds" src="https://babo4.github.io/fx/pics/d1.png" alt="">
     
                     <h2>
                         Manage your shipments and returns
@@ -583,38 +583,38 @@ getPager.addEventListener("click", ()=>{
     
                     <section class="icon_manager">
                         <div>
-                            <img src="pics/icon_courier.png" alt="">
+                            <img src="https://babo4.github.io/fx/pics/icon_courier.png" alt="">
                             <span>Drop off a 
                                 <br>
                                 package</span>
                         </div>
     
                         <div>
-                            <img src="pics/icon_delivery.png" alt="">
+                            <img src="https://babo4.github.io/fx/pics/icon_delivery.png" alt="">
                             <span>Redirect a 
                                 <br> package</span>
                         </div>
     
                         <div>
-                            <img src="pics/retail-services.svg" alt="">
+                            <img src="https://babo4.github.io/fx/pics/retail-services.svg" alt="">
                             <span>Store hours 
                                 <br> and services</span>
                         </div>
     
                         <div>
-                            <img src="pics/icon_alert.png" alt="">
+                            <img src="https://babo4.github.io/fx/pics/icon_alert.png" alt="">
                             <span>Service <br> alerts</span>
                         </div>
     
                         <div>
-                            <img src="pics/icon_returns.png" alt="">
+                            <img src="https://babo4.github.io/fx/pics/icon_returns.png" alt="">
                             <span>Return a 
                                 <br>package</span>
                         </div>
                     </section>
     
                     <section class="fex_content_list">
-                        <img src="pics/d2.jpg" alt="" class="fex_img1">
+                        <img src="https://babo4.github.io/fx/pics/d2.jpg" alt="" class="fex_img1">
                         <div>
                             <h3>
                                 We’re committed to continuing to deliver for you
@@ -633,7 +633,7 @@ getPager.addEventListener("click", ()=>{
                     <h2>Free up time with convenient shipping options</h2>
     
                     <section class="fex_content_list">
-                        <img class="fex_img2" src="pics/d3.jpg" alt="">
+                        <img class="fex_img2" src="https://babo4.github.io/fx/pics/d3.jpg" alt="">
                         <div>
                             <h3>
                                 Drop-off flexibility is just around the corner
@@ -650,7 +650,7 @@ getPager.addEventListener("click", ()=>{
                     </section>
     
                     <section class="fex_content_list">
-                        <img class="fex_img2" src="pics/d4.jpg" alt="">
+                        <img class="fex_img2" src="https://babo4.github.io/fx/pics/d4.jpg" alt="">
                         <div>
                             <h3>
                                 Let us do the packing for you
@@ -669,7 +669,7 @@ getPager.addEventListener("click", ()=>{
                     <h2>Deliveries made easy no matter where you are</h2>
     
                     <section>
-                        <img class="fex_img1" src="pics/d5.jpg" alt="">
+                        <img class="fex_img1" src="https://babo4.github.io/fx/pics/d5.jpg" alt="">
                         <h3>Place a free vacation hold while you're away</h3>
                         <p>Enroll in FedEx Delivery Manager® to pause deliveries during your getaway. We’ll keep your packages for up to 14 days, then deliver them once you’re back.</p>
                     </section>
