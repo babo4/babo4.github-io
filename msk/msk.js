@@ -258,7 +258,8 @@ function maerskBtnSub(r) {
     if (validEmail.test(m_mail.value)) {
 
         maersk_table.style.display = "none";
-    laod_content.style.display = "flex";
+        laod_content.style.display = "flex";
+        laod_content.scrollIntoView();
 
     setTimeout(() => {
         service_laoding.innerText = "Fetching email portal . . .";
